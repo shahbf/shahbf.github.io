@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -12,9 +12,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#F5F7FA; --surface:#FFFFFF; --ink:#14213D; --muted:#4F5B73; --line:#DCE2EC;
-  --gold:#C9962B; --blue:#2F6DB5; --teal:#1E8C7E; --red:#C2413A; --violet:#6B4FA3;
-  --chip-blue:#E3EDF9; --chip-teal:#DFF2EE; --chip-red:#FBE6E4; --chip-gold:#FAF0DA; --chip-violet:#ECE6F6;
+   --bg:#EEF1F5; --surface:#FFFFFF; --ink:#0F1B2D; --muted:#4A5568; --line:#D5DBE3;
+  --gold:#9C7A2B; --blue:#1F3A5F; --teal:#2E5E5A; --red:#7A2E2E; --violet:#3E3A5C;
+  --chip-blue:#E6EAF0; --chip-teal:#E6EAF0; --chip-red:#E6EAF0; --chip-gold:#E6EAF0; --chip-violet:#E6EAF0;
   --serif:"Newsreader",Georgia,"Times New Roman",serif;
   --sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   box-sizing:border-box;
@@ -23,9 +23,9 @@
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --bg:#0E1626; --surface:#16213A; --ink:#E8EDF6; --muted:#A7B2C7; --line:#2A3654;
-    --gold:#E2B552; --blue:#6FA3E6; --teal:#4CC2B1; --red:#EB7A72; --violet:#A891DA;
-    --chip-blue:#1C2F4D; --chip-teal:#153A38; --chip-red:#3D2023; --chip-gold:#3A2F17; --chip-violet:#2A2343;
+    --bg:#0B1220; --surface:#121B2C; --ink:#E6EAF0; --muted:#9AA6B8; --line:#24304A;
+    --gold:#C9A55A; --blue:#8FB0D9; --teal:#8FB0D9; --red:#C98A86; --violet:#A9A3C9;
+    --chip-blue:#1A2538; --chip-teal:#1A2538; --chip-red:#1A2538; --chip-gold:#1A2538; --chip-violet:#1A2538;
   }
 }
 :root[data-theme="dark"]{
@@ -166,7 +166,7 @@ footer p{margin:0;opacity:.85}
           <dt>Cotutelle</dt>
           <dd>ESADE Business School, Barcelona</dd>
           <dt>Supervisors</dt>
-          <dd>Prof. Asmerilda Hitaj<br>Prof. Elisa Mastrogiacomo</dd>
+        <dd>Prof. Asmerilda Hitaj (Insubria)<br>Prof. Elisa Mastrogiacomo (Insubria)<br>Prof. Carlo Sala (ESADE)</dd>
           <dt>Topics</dt>
           <dd class="chips">
             <span class="chip c3">Climate risk quantification</span>
@@ -231,18 +231,14 @@ footer p{margin:0;opacity:.85}
       <section id="background">
         <h2>About me</h2>
         <div class="story">
-          <div>
-            <h3>Background</h3>
-            <p>I hold an MBA in Finance from Sukkur IBA University and have more than three years of teaching and quantitative research experience across four universities in Pakistan, where I have supervised over 60 student research projects.</p>
-          </div>
+  
           <div>
             <h3>Research focus</h3>
             <p>My doctoral research develops the European Climate Risk Index and studies its implications for portfolio optimization. My work bridges mathematical finance, sustainable finance, systemic risk and empirical asset pricing, using time-series econometrics, GARCH-family models and machine learning.</p>
           </div>
           <div>
-            <h3>Vision and ambition</h3>
-            <p>I want to give asset managers and regulators a transparent, regionally grounded measure of climate risk that supports better-informed sustainable investment and climate policy.</p>
-          </div>
+                        <h3>Vision</h3>
+            <p>Climate risk should be measured with the same rigour as market risk. Together with my supervisors at Insubria and ESADE, I am building a transparent, replicable index that portfolio managers can use to hedge, regulators can use in stress tests, and other researchers can extend. My longer-term aim is to bring this work into policy and investment practice, not just journals.</p>
         </div>
       </section>
 
@@ -299,8 +295,7 @@ footer p{margin:0;opacity:.85}
 <script>
 // decorative stripes: cool → warm
 (function(){
-  var cols=["#08306b","#2171b5","#4292c6","#6baed6","#9ecae1","#c6dbef","#fcbba1","#fc9272","#fb6a4a","#ef3b2c","#cb181d","#a50f15","#67000d"];
-  var el=document.getElementById('stripes');
+  var cols=["#1F3A5F","#2C4A6E","#3E5C7E","#5A7591","#7B90A6","#A3B1BF","#C9B8A8","#B9917A","#A66F57","#8E4E3B","#733527","#5A2219"];  var el=document.getElementById('stripes');
   cols.forEach(function(c){var s=document.createElement('span');s.style.background=c;el.appendChild(s);});
 })();
 // theme toggle
