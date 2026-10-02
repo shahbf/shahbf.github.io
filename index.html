@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bibi Fiza Shah · PhD Candidate, Climate Finance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F7FA; --surface:#FFFFFF; --ink:#14213D; --muted:#4F5B73; --line:#DCE2EC;
+  --gold:#C9962B; --blue:#2F6DB5; --teal:#1E8C7E; --red:#C2413A; --violet:#6B4FA3;
+  --chip-blue:#E3EDF9; --chip-teal:#DFF2EE; --chip-red:#FBE6E4; --chip-gold:#FAF0DA; --chip-violet:#ECE6F6;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1626; --surface:#16213A; --ink:#E8EDF6; --muted:#A7B2C7; --line:#2A3654;
+    --gold:#E2B552; --blue:#6FA3E6; --teal:#4CC2B1; --red:#EB7A72; --violet:#A891DA;
+    --chip-blue:#1C2F4D; --chip-teal:#153A38; --chip-red:#3D2023; --chip-gold:#3A2F17; --chip-violet:#2A2343;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1626; --surface:#16213A; --ink:#E8EDF6; --muted:#A7B2C7; --line:#2A3654;
+  --gold:#E2B552; --blue:#6FA3E6; --teal:#4CC2B1; --red:#EB7A72; --violet:#A891DA;
+  --chip-blue:#1C2F4D; --chip-teal:#153A38; --chip-red:#3D2023; --chip-gold:#3A2F17; --chip-violet:#2A2343;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--blue);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+img{max-width:100%}
+
+/* top bar */
+.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;max-width:1120px;margin:0 auto;padding:1rem 1.5rem}
+.brand{font:600 1rem var(--sans);color:var(--ink);text-decoration:none}
+.top nav a{color:var(--muted);text-decoration:none;margin-left:1.25rem;font-size:.95rem}
+.top nav a:hover{color:var(--ink)}
+
+/* climate stripes hero band */
+.stripes{height:22px;display:flex}
+.stripes span{flex:1}
+
+.wrap{max-width:1120px;margin:0 auto;padding:0 1.5rem}
+.crumbs{font-size:.88rem;color:var(--muted);padding:1.25rem 0 0}
+.crumbs a{color:var(--muted)}
+
+header.hero{display:grid;grid-template-columns:auto 1fr;gap:2rem;align-items:center;padding:2rem 0 2.5rem}
+.photo{width:148px;height:148px;border-radius:50%;background:var(--chip-blue);border:4px solid var(--surface);box-shadow:0 0 0 2px var(--gold);display:grid;place-items:center;font:600 2.6rem var(--serif);color:var(--blue)}
+h1{font:600 clamp(2.4rem,5vw,3.6rem)/1.05 var(--serif);margin:0 0 .4rem;letter-spacing:-.01em}
+.role{font-size:1.15rem;color:var(--muted);margin:0}
+.thesis{font:400 1.2rem/1.45 var(--serif);font-style:italic;max-width:46ch;margin:.9rem 0 0;padding-left:1rem;border-left:4px solid var(--gold)}
+
+.layout{display:grid;grid-template-columns:300px 1fr;gap:3rem;padding-bottom:4rem}
+aside .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.4rem}
+aside dl{margin:0}
+aside dt{font-weight:600;font-size:.9rem;margin-top:1.1rem}
+aside dt:first-child{margin-top:0}
+aside dd{margin:.2rem 0 0;color:var(--muted);font-size:.95rem;overflow-wrap:anywhere}
+.btn{display:inline-block;margin-top:1.3rem;background:var(--ink);color:var(--bg);padding:.65rem 1.1rem;border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem}
+.btn:hover{background:var(--blue)}
+
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem}
+.chip{padding:.3rem .75rem;border-radius:999px;font-size:.88rem;font-weight:500}
+.c1{background:var(--chip-blue);color:var(--blue)}
+.c2{background:var(--chip-teal);color:var(--teal)}
+.c3{background:var(--chip-red);color:var(--red)}
+.c4{background:var(--chip-gold);color:var(--gold)}
+.c5{background:var(--chip-violet);color:var(--violet)}
+
+main section{margin-bottom:3rem}
+h2{font:600 1.75rem/1.2 var(--serif);margin:0 0 1rem}
+h3{font:600 1.1rem/1.3 var(--sans);margin:0 0 .35rem}
+main p{max-width:68ch;margin:0 0 1rem}
+
+/* papers – a real sequence, so numbered */
+.papers{display:grid;gap:1rem}
+.paper{display:grid;grid-template-columns:56px 1fr;gap:1rem;background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--c);border-radius:12px;padding:1.2rem 1.3rem}
+.paper .n{font:600 2.2rem/1 var(--serif);color:var(--c)}
+.paper p{margin:0;color:var(--muted);font-size:.97rem}
+.paper .tag{display:inline-block;margin-top:.6rem;font-size:.82rem;font-weight:600;color:var(--c)}
+
+.blocks{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.25rem 0}
+.block{border-radius:12px;padding:1rem 1.1rem;background:var(--bg-c);color:var(--ink)}
+.block h3{color:var(--c)}
+.block p{font-size:.92rem;margin:0;color:var(--muted)}
+
+.story{display:grid;gap:1.5rem}
+.story div{padding-left:1.1rem;border-left:3px solid var(--line)}
+
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{display:grid;grid-template-columns:110px 1fr;gap:1rem;padding:.8rem 0;border-top:1px solid var(--line)}
+.timeline li:last-child{border-bottom:1px solid var(--line)}
+.timeline .yr{font-weight:600;color:var(--gold)}
+.timeline span{color:var(--muted);font-size:.95rem;display:block}
+
+footer{background:var(--ink);color:var(--bg);padding:2.5rem 0}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.5rem;font-size:.92rem}
+footer a{color:var(--bg)}
+footer p{margin:0;opacity:.85}
+
+.theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:.35rem .8rem;font:500 .85rem var(--sans);cursor:pointer;margin-left:1.25rem}
+
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;gap:2rem}
+  .blocks{grid-template-columns:1fr}
+  header.hero{grid-template-columns:1fr;gap:1.25rem}
+  .photo{width:112px;height:112px;font-size:2rem}
+  .top nav a:not(.keep){display:none}
+}
+@media (max-width:520px){
+  .timeline li{grid-template-columns:1fr;gap:.2rem}
+  .paper{grid-template-columns:1fr;gap:.4rem}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <a class="brand" href="#">Bibi Fiza Shah</a>
+  <nav>
+    <a href="#research">Research</a>
+    <a href="#background">Background</a>
+    <a href="#publications">Publications</a>
+    <a href="#experience">Experience</a>
+    <a class="keep" href="#contact">Contact</a>
+    <button class="theme" id="themeBtn" type="button">Dark mode</button>
+  </nav>
+</div>
+
+<!-- Decorative climate-stripes band (blue = cooler, red = warmer). Illustrative, not data. -->
+<div class="stripes" aria-hidden="true" id="stripes"></div>
+
+<div class="wrap">
+  <div class="crumbs"><a href="#">Home</a> / <a href="#">Research</a> / Bibi Fiza Shah</div>
+
+  <header class="hero">
+    <!-- Replace the initials with: <img class="photo" src="your-photo.jpg" alt="Bibi Fiza Shah"> -->
+    <div class="photo" aria-hidden="true">FS</div>
+    <div>
+      <h1>Bibi Fiza Shah</h1>
+      <p class="role">PhD Researcher in Mathematical Finance, Methods and Models for Economic Decisions, Università degli Studi dell'Insubria. Finance lecturer.</p>
+      <p class="thesis">A Multi-Factor Climate Risk Index for European Markets: Implications for Portfolio Management and Sustainable Investments</p>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside>
+      <div class="card">
+        <dl>
+          <dt>E-mail</dt>
+          <dd><a href="mailto:bibifiza.abdullah@gmail.com">bibifiza.abdullah@gmail.com</a></dd>
+          <dt>LinkedIn</dt>
+          <dd><a href="https://www.linkedin.com/in/bibi-fiza-shah/">linkedin.com/in/bibi-fiza-shah</a></dd>
+          <dt>Programme</dt>
+          <dd>PhD in Methods and Models for Economic Decisions, Università degli Studi dell'Insubria, Varese</dd>
+          <dt>Cotutelle</dt>
+          <dd>ESADE Business School, Barcelona</dd>
+          <dt>Supervisors</dt>
+          <dd>Prof. Asmerilda Hitaj<br>Prof. Elisa Mastrogiacomo</dd>
+          <dt>Topics</dt>
+          <dd class="chips">
+            <span class="chip c3">Climate risk quantification</span>
+            <span class="chip c2">Sustainable &amp; climate finance</span>
+            <span class="chip c4">Asset pricing</span>
+            <span class="chip c1">Portfolio management</span>
+            <span class="chip c5">Quantitative economics</span>
+          </dd>
+        </dl>
+        <a class="btn" href="https://drive.google.com/file/d/1ZTUSOLzUjoFZ51TU49cZjqYWfKap_rvT/view?usp=drive_link" target="_blank" rel="noopener">Download CV</a>
+      </div>
+    </aside>
+
+    <main>
+      <section id="research">
+        <h2>Primary research areas</h2>
+        <p>I build tools that let investors and policymakers see climate risk the way markets price it, starting from European physical climate data rather than global proxies.</p>
+
+        <div class="blocks">
+          <div class="block" style="--c:var(--teal);--bg-c:var(--chip-teal)">
+            <h3>Nature</h3>
+            <p>Temperature, precipitation, Mediterranean SST, drought (SPEI-12) and NAO, from ERA5 reanalysis.</p>
+          </div>
+          <div class="block" style="--c:var(--violet);--bg-c:var(--chip-violet)">
+            <h3>Uncertainty</h3>
+            <p>Economic policy uncertainty, EU ETS carbon prices and transition-risk signals.</p>
+          </div>
+          <div class="block" style="--c:var(--red);--bg-c:var(--chip-red)">
+            <h3>News</h3>
+            <p>European climate media coverage and physical-risk attention indices.</p>
+          </div>
+        </div>
+
+        <div class="papers">
+          <div class="paper" style="--c:var(--blue)">
+            <div class="n">1</div>
+            <div>
+              <h3>Building the European Climate Risk Index (EU-CRI)</h3>
+              <p>A multi-factor index integrating physical climate indicators, news-based indices and policy uncertainty measures to quantify climate risk exposure.</p>
+              <span class="tag">In progress</span>
+            </div>
+          </div>
+          <div class="paper" style="--c:var(--teal)">
+            <div class="n">2</div>
+            <div>
+              <h3>Cross-market climate risk spillovers</h3>
+              <p>How climate shocks travel between European and US markets, across quantiles and frequencies.</p>
+              <span class="tag">Planned</span>
+            </div>
+          </div>
+          <div class="paper" style="--c:var(--gold)">
+            <div class="n">3</div>
+            <div>
+              <h3>Climate risk in asset prices</h3>
+              <p>Whether exposure to the EU-CRI is priced in European equities, and what it means for portfolio optimization.</p>
+              <span class="tag">Planned</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="background">
+        <h2>About me</h2>
+        <div class="story">
+          <div>
+            <h3>Background</h3>
+            <p>I hold an MBA in Finance from Sukkur IBA University and have more than three years of teaching and quantitative research experience across four universities in Pakistan, where I have supervised over 60 student research projects.</p>
+          </div>
+          <div>
+            <h3>Research focus</h3>
+            <p>My doctoral research develops the European Climate Risk Index and studies its implications for portfolio optimization. My work bridges mathematical finance, sustainable finance, systemic risk and empirical asset pricing, using time-series econometrics, GARCH-family models and machine learning.</p>
+          </div>
+          <div>
+            <h3>Vision and ambition</h3>
+            <p>I want to give asset managers and regulators a transparent, regionally grounded measure of climate risk that supports better-informed sustainable investment and climate policy.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <ul class="timeline">
+          <li><div class="yr">2026</div><div>Climate Policy Uncertainty and Its Implications for Sustainable Development: A Bibliometric and Systematic Review<span>Shah, B.F. &amp; Ali, H. <em>Discover Atmosphere</em>, 4, 12. <a href="https://doi.org/10.1007/s44292-025-00062-6" target="_blank" rel="noopener">doi.org/10.1007/s44292-025-00062-6</a></span></div></li>
+          <li><div class="yr">2024</div><div>Impact of Corporate Governance on Relationship between ESG and Corporate Financial Performance<span>Shah, B.F., Ali, A., Kumar, K. &amp; Bhutto, N.A. Conference paper.</span></div></li>
+          <li><div class="yr">2024</div><div>Emerging Asian Stock Markets and Market Volatility Using GARCH<span>Shah, B.F. Presented at the 5th ICBE&amp;M, Sukkur IBA University.</span></div></li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <ul class="timeline">
+          <li><div class="yr">2025–now</div><div>Lecturer, Business Administration (Finance)<span>Shaheed Benazir Bhutto University, Pakistan. Corporate Finance, Financial Management, Portfolio &amp; Investment Analysis.</span></div></li>
+          <li><div class="yr">2024–25</div><div>Research Associate<span>Sukkur IBA University</span></div></li>
+          <li><div class="yr">2022–25</div><div>Visiting Lecturer<span>Sukkur IBA University (2023–25), Aror University (2023), The Shaikh Ayaz University (2022)</span></div></li>
+          <li><div class="yr">2020–21</div><div>CFA Institute Research Challenge Intern<span>Intermarket Securities. Top 5 nationally with a financial model on Meezan Bank Ltd.</span></div></li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ul class="timeline">
+          <li><div class="yr">2025–now</div><div>PhD, Methods and Models for Economic Decisions<span>Università degli Studi dell'Insubria, Italy. Cotutelle with ESADE Business School.</span></div></li>
+          <li><div class="yr">MBA</div><div>MBA, Finance<span>Sukkur IBA University, Pakistan. Thesis: Assessing Financial Health and Restructuring Strategies: An Empirical Study of Loss-Making State-Owned Enterprises in Pakistan.</span></div></li>
+          <li><div class="yr">BBA</div><div>BBA, Finance<span>Shah Abdul Latif University, Pakistan</span></div></li>
+        </ul>
+      </section>
+
+      <section id="honours">
+        <h2>Honours and awards</h2>
+        <ul class="timeline">
+          <li><div class="yr">2025</div><div>Fully funded PhD position<span>Università degli Studi dell'Insubria. Top-ranked in international competitive selection.</span></div></li>
+          <li><div class="yr">2021</div><div>Runner-up, CFA Equity Research Challenge</div></li>
+          <li><div class="yr">2020</div><div>Fully funded Master's scholarship<span>Sindh Government Higher Education</span></div></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</div>
+
+<footer id="contact">
+  <div class="wrap">
+    <p>Bibi Fiza Shah<br>Monte Generoso Campus, Varese, Italy</p>
+    <p><a href="mailto:bibifiza.abdullah@gmail.com">E-mail</a> &nbsp; <a href="https://www.linkedin.com/in/bibi-fiza-shah/">LinkedIn</a> &nbsp; <a href="https://drive.google.com/file/d/1ZTUSOLzUjoFZ51TU49cZjqYWfKap_rvT/view?usp=drive_link">CV</a></p>
+    <p>© 2026 Bibi Fiza Shah</p>
+  </div>
+</footer>
+
+<script>
+// decorative stripes: cool → warm
+(function(){
+  var cols=["#08306b","#2171b5","#4292c6","#6baed6","#9ecae1","#c6dbef","#fcbba1","#fc9272","#fb6a4a","#ef3b2c","#cb181d","#a50f15","#67000d"];
+  var el=document.getElementById('stripes');
+  cols.forEach(function(c){var s=document.createElement('span');s.style.background=c;el.appendChild(s);});
+})();
+// theme toggle
+(function(){
+  var btn=document.getElementById('themeBtn'),root=document.documentElement,t=null;
+  try{t=localStorage.getItem('theme');}catch(e){}
+  function apply(v){ if(v){root.setAttribute('data-theme',v);} 
+    var dark=v? v==='dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    btn.textContent=dark?'Light mode':'Dark mode'; }
+  apply(t);
+  btn.addEventListener('click',function(){
+    var dark=root.getAttribute('data-theme')? root.getAttribute('data-theme')==='dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    var v=dark?'light':'dark'; apply(v); try{localStorage.setItem('theme',v);}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
